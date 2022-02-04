@@ -1,1 +1,82 @@
-Vamos aprender git.
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+#define mset(V,X) memset(V,X,sizeof(V))
+#define ll long long
+#define int long long
+#define vi vector<int>
+#define pii pair<int,int>
+#define pb push_back
+#define mp make_pair
+#define fi first
+#define se second
+#define endl '\n'
+
+const int MAX = 1e6+1;
+
+int cont = 0;
+
+int parent[MAX], size[MAX];
+
+int find(int valor){
+    if(parent[valor] == valor){
+        return valor;
+    }
+    
+    return parent[valor] = find(parent[valor]);
+}
+
+void merge(int i, int j){
+    i = find(i); j = find(j);
+    
+    if(i == j)
+        return;
+        
+    if(size[i] >= size[j]){
+        parent[j] = i;
+        size[i] += size[j]; 
+    }
+    else{
+        parent[i] = j;
+        size[j] += size[i];
+    }
+}
+
+int solve(){
+    int n, m; cin >> n >> m;
+    for(int i=1; i<=n;i++){
+        size[i] = 1;
+        parent[i] = i;
+    }
+    
+    for(int i=0;i<m;i++){
+        char tipo; int a,b; cin >> tipo >> a >> b;
+        if(tipo == 'C'){
+            if(find(a) == find(b)){
+                cout << 'S' << endl;
+            }
+            else 
+                cout << 'N' << endl;
+        }else{
+            
+            merge(a,b);
+            
+        }
+    }
+    return 0;
+}
+
+signed main(){
+	ios_base::sync_with_stdio(false);cin.tie(NULL);
+	
+	int t;
+	/*
+	cin>>t; //*/
+	t = 1; //*/
+	while(t--) solve();
+
+	return 0;
+}
+
