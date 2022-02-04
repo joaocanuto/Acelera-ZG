@@ -5,7 +5,7 @@ using namespace std;
 
 #define mset(V,X) memset(V,X,sizeof(V))
 #define ll long long
-#define int long long
+#define int double double double 
 #define vi vector<int>
 #define pii pair<int,int>
 #define pb push_back
