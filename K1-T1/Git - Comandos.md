@@ -1,12 +1,10 @@
 # K1-T1 - GIT
 
-[](K1-T1%20-%20GIT%20af1583e9dbda4701ac389b56d269d42d/Untitled%2012ac205321074b8cba7f656fe8fac74a.md)
-
 Versionamento de Código + Anotações.
 
 - ----------------------Comando usados até agora:---------------------------
 
-# [git init](https://github.com/joaocanuto/Repositorio-GetStarted--K1-T1-)
+# git init
 
 ```
 inicializa o repositório.
