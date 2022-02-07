@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -5,11 +6,7 @@ using namespace std;
 
 #define mset(V,X) memset(V,X,sizeof(V))
 #define ll long long
-<<<<<<< HEAD
 #define int double double double 
-=======
-#define int double
->>>>>>> 893720930dc54d3897585d005e5cc57e0815e8ba
 #define vi vector<int>
 #define pii pair<int,int>
 #define pb push_back
@@ -83,4 +80,7 @@ signed main(){
 
 	return 0;
 }
+=======
+Testando as alterações.
+>>>>>>> main
 
